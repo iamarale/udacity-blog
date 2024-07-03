@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-color: #0d0d0d;
+  color: rgba(202, 202, 202, 0.8);
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+/*  */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, 250px) repeat(3, 1fr);
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    background: red;
+  }
+}
+@media (min-width: 901px) {
+  .container {
+    background: purple;
+  }
+}
