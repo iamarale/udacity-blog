@@ -3,20 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/subscribe.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <!-- header -->
-      <header class="nav">
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="./subscribe.html">Subscribe</a></li>
-        </ul>
-        w
-        <h1 class="primary-color">Subscrive</h1>
-      </header>
-    </div>
+    <header class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="./pages/subscribe.html">Subscribe</a></li>
+      </ul>
+      <h1 class="primary-color">Subscribe</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="name">
+          <span class="firstName">
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" />
+          </span>
+
+          <span class="lastName">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" />
+          </span>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input id="email" type="text" />
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>
