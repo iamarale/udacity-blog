@@ -12,11 +12,19 @@ body {
 }
 
 h1,
+h2 {
+  font-family: "Merriweather", sans-serif;
+}
+
+h1,
 h2,
 h3 {
   color: #fff;
 }
 
+.underline {
+  text-decoration: underline;
+}
 .container {
   border: 1px solid red;
 }
@@ -35,7 +43,7 @@ footer {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: minmax(100px, 150px) repeat(6, 1fr);
+  grid-template-rows: minmax(100px, 150px) repeat(5, 1fr) minmax(50px, 150px);
   grid-template-areas:
     "hd hd hd hd hd"
     "link link link link link"
@@ -86,8 +94,46 @@ li a:hover {
 }
 .blogs {
   grid-area: main;
+  display: flex;
+  justify-content: space-around;
+  align-items: Center;
+  flex-wrap: wrap;
 }
 
+/* blogs */
+.blog-one {
+  background-image: url("../assets/hedgehog-looking-camera.avif");
+  background-size: cover;
+  background-position: center;
+}
+.blog-two {
+  background-image: url("../assets/sugar-glider.avif");
+  background-size: cover;
+  background-position: center;
+}
+.blog-three {
+  background-image: url("../assets/mastiff-dog.avif");
+  background-size: cover;
+  background-position: center;
+}
+.blog-four {
+  background-image: url("../assets/mountain-goat.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  min-width: 200px;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.card h3 {
+  text-shadow: 1px 3px 5px black;
+}
 .footer {
   grid-area: ft;
 }
