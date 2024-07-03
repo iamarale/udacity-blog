@@ -43,7 +43,7 @@ footer {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: minmax(100px, 150px) repeat(5, 1fr) minmax(50px, 150px);
+  grid-template-rows: minmax(100px, 150px) repeat(5, 1fr) minmax(50px, 100px);
   grid-template-areas:
     "hd hd hd hd hd"
     "link link link link link"
@@ -141,13 +141,47 @@ li a:hover {
 /* medium */
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
-    background: red;
+    grid-template-areas:
+      "hd hd hd hd hd"
+      "link main main main main"
+      "link main main main main"
+      "link main main main main"
+      "link main main main main"
+      "link main main main main"
+      "ft ft ft ft ft";
+  }
+  .links {
+    padding: 10px;
+  }
+  .links h2 {
+    margin-top: 20px;
+  }
+  .sidebar-nav li {
+    margin: 15px 0;
   }
 }
 
 /* big screen */
 @media (min-width: 901px) {
   .container {
-    background: purple;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: minmax(100px, 150px) repeat(5, 1fr) minmax(50px, 100px);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd"
+      "link link main main main main main"
+      "link link main main main main main"
+      "link link main main main main main"
+      "link link main main main main main"
+      "link link main main main main main"
+      "ft ft ft ft ft ft ft";
+  }
+  .links {
+    padding: 10px;
+  }
+  .links h2 {
+    margin-top: 20px;
+  }
+  .sidebar-nav li {
+    margin: 15px 0;
   }
 }
