@@ -17,19 +17,89 @@ h3 {
   color: #fff;
 }
 
+.container {
+  border: 1px solid red;
+}
+.links {
+  border: 1px solid yellow;
+}
+.blogs {
+  border: 1px solid purple;
+}
+footer {
+  border: 1px solid green;
+}
+
 /*  */
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px, 250px) repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(100px, 150px) repeat(6, 1fr);
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "link link link link link"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "ft ft ft ft ft";
 }
 
+.nav {
+  grid-area: hd;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  color: #4e6e9c;
+  text-decoration: none;
+}
+
+.light-blue {
+  color: #4e6e9c;
+}
+li a:hover {
+  color: #fff;
+}
+.links {
+  grid-area: link;
+}
+.blogs {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+/* medium */
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
     background: red;
   }
 }
+
+/* big screen */
 @media (min-width: 901px) {
   .container {
     background: purple;
