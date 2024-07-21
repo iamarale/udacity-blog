@@ -31,7 +31,7 @@ a:hover {
   text-decoration: underline;
 }
 #blogs {
-  border: 2px solid #939185;
+  border: 2px solid #eeedeb;
   border-radius: 5px;
 }
 /*  */
@@ -57,6 +57,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #939185cc;
 }
 
 .nav ul {
@@ -65,7 +66,7 @@ a:hover {
   display: flex;
   width: 70%;
   justify-content: space-around;
-  border: 2px solid gray;
+  border: 2px solid #eeedeb;
   padding: 5px;
   border-radius: 20px;
 }
@@ -80,6 +81,7 @@ li a {
 
 .links {
   grid-area: link;
+  background-color: #939185cc;
 }
 #blogs {
   grid-area: main;
@@ -87,26 +89,27 @@ li a {
   justify-content: space-around;
   align-items: Center;
   flex-wrap: wrap;
+  background-color: rgba(147, 145, 133, 0.4);
 }
 
 /* blogs */
 .blog-one {
-  background-image: url("../assets/hedgehog-looking-camera.avif");
+  background-image: url("../hedgehog-looking-camera.avif");
   background-size: cover;
   background-position: center;
 }
 .blog-two {
-  background-image: url("../assets/sugar-glider.avif");
+  background-image: url("../sugar-glider.avif");
   background-size: cover;
   background-position: center;
 }
 .blog-three {
-  background-image: url("../assets/mastiff-dog.avif");
+  background-image: url("../mastiff-dog.avif");
   background-size: cover;
   background-position: center;
 }
 .blog-four {
-  background-image: url("../assets/mountain-goat.avif");
+  background-image: url("../mountain-goat.avif");
   background-size: cover;
   background-position: center;
 }
@@ -138,18 +141,19 @@ li a {
 }
 .footer {
   grid-area: ft;
+  background-color: #939185cc;
 }
 
 /* medium */
 @media (min-width: 600px) and (max-width: 900px) {
   #blogs {
-    border: 2px solid #939185;
+    border: 2px solid #eeedeb;
     border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
   .links {
-    border: 2px solid #939185;
+    border: 2px solid #eeedeb;
   }
   .container {
     grid-template-areas:
@@ -175,13 +179,13 @@ li a {
 /* big screen */
 @media (min-width: 901px) {
   #blogs {
-    border: 5px solid #939185;
+    border: 5px solid #eeedeb;
     border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
   .links {
-    border: 5px solid #939185;
+    border: 5px solid #eeedeb;
   }
   .card {
     min-width: 300px;

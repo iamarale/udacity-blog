@@ -30,17 +30,10 @@ a:hover {
 ul {
   list-style: none;
 }
-
-.container {
-  display: grid;
-  height: 1024px;
-  grid-template-columns: 20px 780px 20px;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-areas:
-    "hd hd hd "
-    "img img img "
-    "text text text ";
+body {
+  background-color: rgba(147, 145, 133, 0.4);
 }
+
 /* nav */
 .nav {
   width: 100%;
