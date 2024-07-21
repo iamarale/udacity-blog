@@ -53,10 +53,20 @@ body {
   padding: 5px;
   border-radius: 20px;
 }
+/* img */
+.img-container {
+  max-width: 750px;
+}
+.blog-img {
+  width: 100%;
+  height: 40%;
+  border-radius: 0.25rem;
+}
 
 /* main */
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -76,4 +86,14 @@ main {
 .heading {
   margin-top: 2rem;
   margin-bottom: 0.25rem;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .img-container {
+    margin: 0 2rem;
+    max-width: 850px;
+  }
+  .blog-wrapper {
+    max-width: 700px;
+  }
 }
