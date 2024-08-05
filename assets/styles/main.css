@@ -1,32 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-}
-body {
-  background-color: #eeedeb;
-  color: #45474b;
-}
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("core.css");
+@import url("footer.css");
+@import url("header.css");
 
-h1,
-h2 {
-  font-family: "Merriweather", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  color: #2f3645;
-}
-a {
-  color: #4e6e9c;
-}
-a:hover {
-  color: #96c9f4;
-}
 .underline {
   text-decoration: underline;
 }
@@ -50,39 +27,6 @@ a:hover {
     "ft ft ft ft ft";
 }
 
-.nav {
-  grid-area: hd;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #939185cc;
-}
-
-.nav ul {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  width: 70%;
-  justify-content: space-around;
-  border: 2px solid #eeedeb;
-  padding: 5px;
-  border-radius: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-li a {
-  text-decoration: none;
-}
-
-.links {
-  grid-area: link;
-  background-color: #939185cc;
-}
 #blogs {
   grid-area: main;
   display: flex;
@@ -138,10 +82,6 @@ li a {
 
 .card h3 {
   text-shadow: 1px 3px 5px black;
-}
-.footer {
-  grid-area: ft;
-  background-color: #939185cc;
 }
 
 /* medium */
