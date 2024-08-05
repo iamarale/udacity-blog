@@ -32,3 +32,15 @@ li a {
   grid-area: link;
   background-color: #939185cc;
 }
+
+@media (min-width: 901px) {
+  .nav {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .nav ul {
+    max-width: 750px;
+    padding: 12px;
+    border-radius: 50px;
+  }
+}
